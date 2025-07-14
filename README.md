@@ -1,11 +1,11 @@
 ### **1D Burgers Equation Solvers: FDM, PINN, and iPINN**
-
+---
 This repository demonstrates and compares three different approaches to solving the one-dimensional (1D) Burgers equation—a classic nonlinear partial differential equation (PDE) widely used in fluid dynamics and nonlinear wave modeling.
 
 
 
-###### \## Featured methods:
-
+######  Featured methods:
+---
 
 
 **-Finite Difference Method (FDM):** A standard numerical PDE solver, serving as a reference solution.
@@ -21,30 +21,17 @@ This repository demonstrates and compares three different approaches to solving 
 
 
 ###### \## Motivation
+---
 
-$$
+∂u/∂t + u ∂u/∂x = ν ∂²u/∂x²
 
-\\frac{\\partial u}{\\partial t} + u \\frac{\\partial u}{\\partial x} = \\nu \\frac{\\partial^2 u}{\\partial x^2}
-
-$$
-
-
-
-where \\( u(x, t) \\) is the solution and \\( \\nu \\) is the viscosity.
-
-&nbsp;
+where u(x, t) is the solution and ν is the viscosity.
 
 is a prototypical nonlinear PDE. Comparing classical solvers (FDM) and neural PDE solvers (PINN/iPINN) helps you:
 
-
-
 \-Understand the strengths and limitations of data-driven and traditional approaches.
 
-
-
 \-See how PINNs can approximate the solution across the whole domain, not just on a fixed grid.
-
-
 
 \-Explore how iPINNs recover both the underlying physics and unknown parameters using limited data—crucial for scientific machine learning and “learning physics from data.”
 
@@ -52,19 +39,11 @@ is a prototypical nonlinear PDE. Comparing classical solvers (FDM) and neural PD
 
 >The analytical solution for the chosen initial and boundary conditions is:
 
-
-
-$$
-
-u(x, t) = -\\sin(\\pi x)\\, \\exp\\big(-\\pi^2 \\nu t\\big)
-
-$$​
-
-
-
+u(x, t) = -sin(π x) · exp( -π² ν t )
 
 
 ###### \## Repository Contents
+---
 
 **fdm\_1d\_burgers.py**: Classical FDM code for time-stepping the 1D Burgers equation, with visualization of solution evolution.
 
@@ -77,10 +56,10 @@ $$​
 **ipinns\_1d\_burgers.py**: PyTorch-based iPINN code that simultaneously learns the solution and the (unknown) viscosity ν using sparse observations and physics constraints.
 
 
-
 Each script is self-contained and can be run independently.
 
 ## What You’ll Learn
+---
 
 ->The accuracy and limitations of PINNs and iPINNs compared to classical methods.
 
@@ -99,6 +78,7 @@ Each script is self-contained and can be run independently.
 
 
 ###### \## Extending This Project
+---
 
 \-Try different initial or boundary conditions.
 
@@ -117,6 +97,7 @@ Each script is self-contained and can be run independently.
 
 
 **License**
+---
 
 This project is licensed under the MIT License.
 
