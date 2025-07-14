@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Jupyter Notebook output (optional: ignore notebook output file types if generated)
+*.nbconvert.ipynb
+
+# VS Code settings (optional)
+.vscode/
+
+# Python virtual environments
+env/
+venv/
+ENV/
+.venv/
+.env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Mac and Linux OS files
+.DS_Store
+*.swp
+
+# Windows OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and data output (optional)
+*.log
+*.csv
+*.dat
+*.out
+
+# Project-specific: add any large output files, figures, or datasets
+figures/
+outputs/
+data/
